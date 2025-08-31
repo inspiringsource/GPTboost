@@ -1,10 +1,11 @@
 # GPTboost
 
-A Windows 10 optimization tool designed to eliminate ChatGPT freezes and lag by optimizing system resources for smooth AI interactions.
+A Windows 10 optimization tool designed to eliminate ChatGPT freezes and lag by optimizing system resources for smooth AI interactions. Optimized with Grok (Preview).
 
 ## Overview
 
 GPTboost tackles common performance issues when running ChatGPT (web and desktop versions) on Windows 10 by:
+
 - Closing resource-heavy background processes
 - Clearing browser cache and site data
 - Switching to high-performance power mode
@@ -18,6 +19,7 @@ GPTboost tackles common performance issues when running ChatGPT (web and desktop
 ## Installation
 
 ### Prerequisites
+
 - Python 3.10 or higher
 - Windows 10
 - Administrator privileges
@@ -27,30 +29,36 @@ GPTboost tackles common performance issues when running ChatGPT (web and desktop
 1. **Install Python 3.10+** from [python.org](https://python.org)
 
 2. **Create and activate virtual environment:**
+
    ```cmd
    python -m venv .venv
    .venv\Scripts\activate
    ```
 
 3. **Install dependencies:**
+
    ```cmd
    pip install -r requirements.txt
    ```
 
 4. **Run GPTboost:**
+
    ```cmd
    python gptboost.py
    ```
+
    *Note: The script will prompt for admin privileges if not already running as administrator.*
 
 ## Usage
 
 ### Basic Usage
+
 ```cmd
 python gptboost.py
 ```
 
 ### Command Line Options
+
 ```cmd
 # Specify browser for cache clearing
 python gptboost.py --browser=edge
@@ -79,11 +87,13 @@ python gptboost.py --admin
 ## Troubleshooting
 
 ### Permission Errors
+
 - Ensure you're running as Administrator
 - Right-click Command Prompt → "Run as administrator"
 - Or use `python gptboost.py --admin` to auto-restart with admin privileges
 
 ### Missing Modules
+
 ```cmd
 # Activate virtual environment first
 .venv\Scripts\activate
@@ -91,7 +101,9 @@ pip install -r requirements.txt
 ```
 
 ### Persistent ChatGPT Freezes
+
 If issues persist after optimization:
+
 - Check hardware temperatures (CPU/GPU overheating)
 - Verify sufficient RAM (8GB+ recommended for ChatGPT)
 - Update graphics drivers
@@ -99,14 +111,17 @@ If issues persist after optimization:
 - Try different browsers (Edge, Chrome, Firefox)
 
 ### Reverting Changes
+
 ```cmd
 python gptboost.py --undo
 ```
+
 This will restore your previous power plan and startup program settings.
 
 ## Contributing
 
 We welcome contributions! Feel free to:
+
 - Report bugs or suggest features via GitHub issues
 - Submit pull requests for improvements
 - Share optimization techniques that work well
